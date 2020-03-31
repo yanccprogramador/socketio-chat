@@ -1,5 +1,8 @@
 # front-chat
 
+# Description
+This is a simple chat , using socket.io, and consumes a web api that`s in another repo [Websocket api]<https://github.com/yanccprogramador/express-websocket>, forgive the horrible layout :)
+
 ## Project setup
 ```
 npm install
@@ -27,3 +30,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+

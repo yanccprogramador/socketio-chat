@@ -1,13 +1,37 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <a href="#" data-target="slide-out" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul id="slide-out" class="sidenav">
+        <li
+          v-for="(people,i) in peoples"
+          :key="i"
+          @click="setStorage(people.id)"
+        >{{people.name}}</li>
+      </ul>
     </div>
-    <router-view/>
+    <router-view />
   </div>
 </template>
+<script>
+import M from 'materialize-css';
 
+export default {
+  name: 'App',
+  mounted() {
+    const elems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(elems, {});
+    console.log(this.peoples);
+  },
+  methods: {
+    setStorage(id) {
+      localStorage.setItem('id_cv', id);
+    },
+  },
+};
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
