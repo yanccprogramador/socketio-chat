@@ -1,7 +1,7 @@
 # front-chat
 
 # Description
-This is a simple chat , using socket.io, and consumes a web api that`s in another repo [Websocket api]<https://github.com/yanccprogramador/express-websocket>, forgive the horrible layout :)
+This is a simple chat , using socket.io, and consumes a web api that`s in another repo [Websocket api](https://github.com/yanccprogramador/express-websocket), forgive the horrible layout :)
 
 ## Project setup
 ```
